@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+        .ic {
+        display: inline-block
+        }
+        .header {
+  background: #00bfff;
+  background-attachment: fixed; /* Фон страницы фиксируется */
+  padding: 5px;
+
+}
+.header1 {
+  background: #87CEFA;
+  display:inline-block
+
+}
+.header2 {
+  background: #FFFFFF;
+  background-attachment: fixed; /* Фон страницы фиксируется */
+  display:inline-block
+
+}
+.coob{
+     width: 210px;
+  height: 10px;
+  display:inline-block;
+  text-align: center
+  margin-left:300
+  background: #87CEFA;
+    border: 2px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    }
+    .button1 {border-radius: 15px;}
+.coob1{
+     width: 210px;
+  height: 5px;
+    padding: 20px;
+    font-size: 15px;
+    margin-left:200px;
+float: right;
+    }
+    .coob3{
+
+  text-color: #FFFFFF;
+  padding: 14px 0px 12px;
+  font-family: "Helvetica";
+  letter-spacing: 1px;
+  font-weight: 50;
+  font-size: 20px;
+  width:500px;
+  height:85px;
+  border: 2px solid #FFFFFF;
+  text-decoration: none;
+}
+
+    .sen{
+     width: 300px;
+  height: 20px;
+    padding: 20px;
+    font-size: 15px;
+
+    }
+    a:link {
+    color: #000000; /* Цвет ссылок */
+    text-decoration: none;
+   }
+   a:visited {
+    color: #000000; /* Цвет посещенных ссылок */
+    text-decoration: none;
+   }
+
+    </style>
+</head>
+<body>
+<div class="header">
+
+<div><img class = "ic" src="tg.jpg" width="50" height="50"></div>
+    </div>
+<div>
+<div class="header1">
+<a href="#vasya"><div class = "coob3"><img src = "ava1.jpg" width="30" height = "30"> Вася <br/> Пойдём гулять после... <br/>14:22</div></a>
+<a href="#oleg"> <div class = "coob3"><img src = "ava2.jpg" width="30" height = "30"> Олег <br/> Когда встретимся с Васей? <br/> 14:37</div></a>
+<a href="#igor"><div class = "coob3"><img src = "ava3.jpg" width="30" height = "30">  Игорь <br/> e4-e1 <br/> 15:00</div></a>
+</div>
+<div class = "header2">
+
+<div>
+<div><input class = " button1" type="button" value = "September 12"></div>
+<div><input class = "coob button1" type="button" value = "Игорь, давай в шахматы!"> <br/> <input class = "coob button1" type="button" value = "Я черными.    14:55"></div>
+<div><input class = "coob1 button1" type="button" value = "Поехали. e2-e4.     14:58"></div>
+<div><input class = "coob button1" type="button" value = "e7-e5.     14:59"></div>
+<div><input class = "coob1 button1" type="button" value = "e4-e1).     15:00"></div>
+</div>
+<div>
+<form action="/send_message" method="POST">
+<textarea class = 'sen'></textarea>
+<button type="submit"><img src="otp.jpg" width="30" height="20"></button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</body>

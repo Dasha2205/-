@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalcus</title>
+  <style>
+    .calc{
+     width: 100px;
+  height: 100px;
+  display:inline-block;
+  text-align: center
+  margin-left:300
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    }
+    .calc1{
+     width: 200px;
+  height: 100px;
+  display:inline-block;
+  text-align: center
+  margin-left:300
+    border: none;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 50px;
+    margin: 4px 2px;
+    }
+   .vivod{
+    width: 410px;
+  height: 70px;
+  display:inline-block;
+  text-align: center
+
+    }
+    .button1 {border-radius: 15px;}
+    input { font-size: 30px; }
+  </style>
+</head>
+<body bgcolor= "yellow">
+<form name="calculator" >
+<input class = "vivod button1 " type="textfield" name="ans" value=""> <br>
+      <input class = "calc button1"type="button" value="hex" onClick="document.calculator.ans.value+=''">
+<input class = "calc button1"type="button" value="dec" onClick="document.calculator.ans.value+=''">
+<input class = "calc button1"type="button" value="one" onClick="document.calculator.ans.value+=''">
+<input class = "calc button1"type="button" value="%" onClick="document.calculator.ans.value+='%'"><br>
+<input class = "calc button1" type="button" value="1" onClick="document.calculator.ans.value+='1'">
+<input class = "calc button1"type="button" value="2" onClick="document.calculator.ans.value+='2'">
+<input class = "calc button1"type="button" value="3" onClick="document.calculator.ans.value+='3'">
+<input class = "calc button1"type="button" value="+" onClick="document.calculator.ans.value+='+'"><br>
+<input class = "calc button1"type="button" value="4" onClick="document.calculator.ans.value+='4'">
+<input class = "calc button1"type="button" value="5" onClick="document.calculator.ans.value+='5'">
+<input class = "calc button1"type="button" value="6" onClick="document.calculator.ans.value+='6'">
+  <input class = "calc button1"type="button" value="-" onClick="document.calculator.ans.value+='-'"><br>
+<input class = "calc button1"type="button" value="7" onClick="document.calculator.ans.value+='7'">
+<input class = "calc button1"type="button" value="8" onClick="document.calculator.ans.value+='8'">
+<input class = "calc button1"type="button" value="9" onClick="document.calculator.ans.value+='9'">
+<input class = "calc button1"type="button" value="*" onClick="document.calculator.ans.value+='*'"><br>
+  <input class = "calc button1" type="button" value="0" onClick="document.calculator.ans.value+='0'">
+<input class = "calc button1"type="button" value="/" onClick="document.calculator.ans.value+='/'">
+
+
+<input class = "calc button1" type="reset" value="Reset">
+<input class = "calc button1" type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+
+</form>
+</body>
+</html>
+</html>

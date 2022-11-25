@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+}
+
+
+.header {
+  background-color:  #DB7093;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color:  #FFB6C1;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #DB7093;
+  color: black;
+}
+
+#navbar a.active {
+  background-color:  #FFB6C1;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+  font-color: #270A1F;
+  font: CONSOLAS
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+.car{
+	position:absolute;
+	left:500px;
+	top:525px;
+	width:370px;
+
+}
+.inl {
+    display: inline-block;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Hello</h2>
+  <p>Welcome to my site.</p>
+</div>
+
+<div id="navbar">
+  <a href="">Classes</a>
+  <a href="#top">About me</a>
+  <a href="#pin">Map</a>
+</div>
+
+<div class="content" >
+  <p><a name="top"></a></p>
+  <h3>Hello</h3>
+  <p>My name is Dasha, surname is Dudareva,and class 7T.</p>
+  <p>Well, here my photo and contacts:</p>
+  <img src="g.jfif" alt="я джифка">
+  <img class = "car" src="punk.jpg" alt="я джифка">
+  <p class = "inl">Telegram: @FamousFrog and</p>
+  <p class = "inl">Phone: +7(968)469-51-13</p>
+  <p>My school map:</p>
+          <p><a name="pin"></a></p>
+          <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/ulitsa_sudakova_29/Z04YcQJnSE0HQFtvfXp2cntrZw==/?ll=37.757030%2C55.673704&mode=search&sctx=ZAAAAAgBEAAaKAoSCUQX1LfM4UJAEVJHx9XI2EtAEhIJ8dWO4hx1wD8RqnzPSIRGqD8iBgABAgMEBSgKOABA5K0HSAFiIWFkZF9zbmlwcGV0PXRvcG9ueW1fZGlzY292ZXJ5LzEueGJCcmVhcnI9c2NoZW1lX0xvY2FsL0dlby9MaXN0RGlzY292ZXJ5L0VuYWJsZURpc2NvdmVyeVRleHRSZXF1ZXN0cz0xYjVyZWFycj1zY2hlbWVfTG9jYWwvR2VvL0xpc3REaXNjb3ZlcnkvRW5hYmxlUmVxdWVzdHM9MWI6cmVhcnI9c2NoZW1lX0xvY2FsL0dlby9MaXN0RGlzY292ZXJ5L0VuYWJsZUVtcHR5UmVxdWVzdHM9MWI1cmVhcnI9c2NoZW1lX0xvY2FsL0dlby9MaXN0RGlzY292ZXJ5L0VuYWJsZVZlcnRpY2FsPTFiMHJlYXJyPXNjaGVtZV9Mb2NhbC9HZW8vQXNrRGlzY292ZXJ5Rm9yVG9wb255bXM9MWI6cmVhcnI9c2NoZW1lX0xvY2FsL0dlby9MaXN0RGlzY292ZXJ5L0VuYWJsZUNvbW1vblBpY01lbnU9MWoCcnWdAc3MTD2gAQCoAQC9AU8H%2F6nCAQbonJHGhQbqAQDyAQD4AQCCAkLRiNC60L7Qu9CwINC40LzQtdC90Lgg0LzQsNGA0YjQsNC70LAg0YfRg9C50LrQvtCy0LAg0LvRjtCx0LvQuNC90L6KAgCSAgMyMTOaAgxkZXNrdG9wLW1hcHM%3D&sll=37.757030%2C55.673704&sspn=0.000502%2C0.000185&text=%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8%20%D0%BC%D0%B0%D1%80%D1%88%D0%B0%D0%BB%D0%B0%20%D1%87%D1%83%D0%B9%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%BB%D1%8E%D0%B1%D0%BB%D0%B8%D0%BD%D0%BE&tilt=0.8726646259971648&utm_medium=mapframe&utm_source=maps&z=21" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Судакова, 29 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUZuSdPcD" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+  <p>And, classes, you can upload or open some file:</p>
+</div>
+<form method="post" enctype="multipart/form-data">
+  <div>
+    <label for="profile_pic">Choose file to upload</label>
+    <input type="file" id="profile_pic" name="profile_pic"
+          accept=".jpg, .jpeg, .png">
+  </div>
+  <div>
+    <button>Submit</button>
+  </div>
+</form>
+<p>    </p>
+<p>    </p>
+<p>    </p>
+<p>    </p>
+<p>    </p>
+<p>    </p>
+<p>    </p>
+<p>    </p>
+<p>    </p>
+<p>    </p>
+<p>    </p>
+<p>    </p>
+<p>    </p>
+<p>    </p>
+<p>    </p>
+
+
+<script>
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
